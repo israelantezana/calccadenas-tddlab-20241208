@@ -16,4 +16,8 @@ describe("Calculadora de cadenas", () => {
   it("retorna la suma para una cadena de varios numeros", () => {
     expect(calcular("1,2,3,4")).toEqual(10);
   });
+
+  it("retorna la suma para una cadena de varios numeros incluido caracter -", () => {
+    expect(calcular("1,2,3-4")).toEqual(10);
+  });
 });
