@@ -1,4 +1,4 @@
-//import sumar from "./sumador.js";
+import sumar from "./calculadora.js";
 
 describe("Calculadora de cadenas", () => {
   it("retorna 0 para una cadena vacia", () => {
@@ -13,15 +13,3 @@ describe("Calculadora de cadenas", () => {
     expect(sumar("1,2")).toEqual(3);
   });
 });
-
-function sumar(cadena) {
-  if (cadena === "") {
-    return 0;
-  }
-  let numeros = cadena.split(",");
-  let total = 0;
-  numeros.forEach((numero) => {
-    total += Number.parseInt(numero);
-  });
-  return total;
-}
