@@ -1,4 +1,4 @@
-function sumar(cadena) {
+function calcular(cadena) {
   if (cadena === "") {
     return 0;
   }
@@ -10,4 +10,4 @@ function sumar(cadena) {
   return total;
 }
 
-export default sumar;
+export default calcular;
